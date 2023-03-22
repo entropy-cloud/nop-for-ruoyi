@@ -30,6 +30,7 @@
         <poi.version>4.1.2</poi.version>
         <velocity.version>2.3</velocity.version>
         <jwt.version>0.9.1</jwt.version>
+        <nop-entropy.version>2.0.0-SNAPSHOT</nop-entropy.version>
     </properties>
 	
     <!-- 依赖声明 -->
@@ -168,6 +169,18 @@
                 <groupId>com.ruoyi</groupId>
                 <artifactId>ruoyi-common</artifactId>
                 <version>${ruoyi.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.entropy-cloud</groupId>
+                <artifactId>nop-spring-web-starter</artifactId>
+                <version>${nop-entropy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.entropy-cloud</groupId>
+                <artifactId>nop-sys-web</artifactId>
+                <version>${nop-entropy.version}</version>
             </dependency>
 
         </dependencies>

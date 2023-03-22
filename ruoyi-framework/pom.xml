@@ -59,6 +59,11 @@
             <artifactId>ruoyi-system</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>io.github.entropy-cloud</groupId>
+            <artifactId>nop-spring-web-starter</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

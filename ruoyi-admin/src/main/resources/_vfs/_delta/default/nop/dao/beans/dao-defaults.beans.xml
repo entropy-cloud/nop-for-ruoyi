@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans x:schema="/nop/schema/beans.xdef" xmlns:x="/nop/schema/xdsl.xdef"
+       x:extends="super" x:dump="true">
+    <bean id="nopDataSource" x:override="remove" />
+
+    <bean id="nopHikariConfig" x:override="remove" />
+
+    <alias name="dynamicDataSource" alias="nopDataSource" />
+
+    <bean id="actionAuthChecker" class="com.ruoyi.framework.web.service.PermissionService" />
+</beans>
