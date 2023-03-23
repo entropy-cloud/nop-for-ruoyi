@@ -2,6 +2,9 @@ package com.ruoyi.web.controller.system;
 
 import java.util.List;
 import java.util.Set;
+
+import io.nop.api.core.config.AppConfig;
+import io.nop.auth.core.AuthCoreConfigs;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -68,6 +71,7 @@ public class SysLoginController
         ajax.put("user", user);
         ajax.put("roles", roles);
         ajax.put("permissions", permissions);
+        ajax.put("debug", AuthCoreConfigs.CFG_AUTH_SITE_MAP_SUPPORT_DEBUG.get());
         return ajax;
     }
 

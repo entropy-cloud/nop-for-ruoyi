@@ -132,6 +132,13 @@ xss:
 
 
 nop:
+  # 后台调试开关
   debug: true
+  # 系统启动时如果发现数据库为空，则自动创建数据库表
   orm:
     init-database-schema: true
+
+  # 前台调试开关
+  auth:
+    site-map:
+      support-debug: true
